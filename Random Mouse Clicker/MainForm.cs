@@ -32,11 +32,13 @@ namespace Random_Mouse_Clicker
         public Hotkey userExitHotkey = new Hotkey();
         public Hotkey userStartStopHotkey = new Hotkey();
 
+        private bool multimonitor = true;
+
         /**
          * Initializes the MainForm and stores width and height information
          * Sets default indices of combo boxes so that they aren't blank
          * */
-        public MainForm()
+        public MainForm(string[] args)
         {
             InitializeComponent();
 
@@ -44,6 +46,25 @@ namespace Random_Mouse_Clicker
             originalFormHeight = this.Height;
             comboBoxClickEvery.SelectedIndex = 1;
             comboBoxDuration.SelectedIndex = 0;
+
+            checkAutorun(args);
+        }
+
+        private void checkAutorun(string[] args)
+        {
+            if(args.Length == 5 && Convert.ToString(args[0])=="autorun")
+            {
+                multimonitor = false;
+
+                x1=int.Parse(args[1]);
+                y1=int.Parse(args[2]);
+                x2=int.Parse(args[3]);
+                y2=int.Parse(args[4]);
+
+                checkClickInterval(comboBoxClickEvery, numericClickEveryMin.Value, numericClickEveryMax.Value);
+                moveAtMouseSpeed = checkMouseSpeed();
+                runManualOrAutomatic();
+            }
         }
 
         /**
@@ -296,11 +317,14 @@ namespace Random_Mouse_Clicker
          * */
         private void randomizeLocationAndClick()
         {
-            monitorOffset = SnippingTool.clickingScreen.Bounds.Location;
-
             location = new Point(random.Next(x1, x2), random.Next(y1, y2));
-            location.X = location.X + monitorOffset.X;
-            location.Y = location.Y + monitorOffset.Y;
+
+            if (multimonitor)
+            {
+                monitorOffset = SnippingTool.clickingScreen.Bounds.Location;
+                location.X = location.X + monitorOffset.X;
+                location.Y = location.Y + monitorOffset.Y;
+            }
 
             moveAtMouseSpeed(location);
             clickAndWait();
@@ -316,7 +340,10 @@ namespace Random_Mouse_Clicker
          * */
         private void randomizeLocationAndClickEachArea()
         {
-            monitorOffset = SnippingTool.clickingScreen.Bounds.Location;
+            if (multimonitor)
+            {
+                monitorOffset = SnippingTool.clickingScreen.Bounds.Location;
+            }
 
             for (int i = 0; i < ImageSplitter.xCoordinates.Count - 1; i++)
             {
@@ -325,8 +352,11 @@ namespace Random_Mouse_Clicker
                     location = new Point(random.Next(x1 + ImageSplitter.xCoordinates[i], x1 + ImageSplitter.xCoordinates[i + 1]),
                         random.Next(y1 + ImageSplitter.yCoordinates[j], y1 + ImageSplitter.yCoordinates[j + 1]));
 
-                    location.X = location.X + monitorOffset.X;
-                    location.Y = location.Y + monitorOffset.Y;
+                    if (multimonitor)
+                    {
+                        location.X = location.X + monitorOffset.X;
+                        location.Y = location.Y + monitorOffset.Y;
+                    }
 
                     moveAtMouseSpeed(location);
                     clickAndWait();
