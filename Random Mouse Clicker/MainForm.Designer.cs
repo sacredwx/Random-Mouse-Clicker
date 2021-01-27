@@ -570,7 +570,6 @@
             this.labelWidthHeight.Size = new System.Drawing.Size(224, 36);
             this.labelWidthHeight.TabIndex = 0;
             this.labelWidthHeight.Text = "Draw an area in the first tab to \r\nview width and height information";
-            this.labelWidthHeight.Click += new System.EventHandler(this.labelWidthHeight_Click);
             // 
             // tabPreview
             // 
