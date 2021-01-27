@@ -484,7 +484,8 @@ namespace Random_Mouse_Clicker
                 resizeFormToDefault();
 
                 labelWidthHeight.Text = "The area has a width of " + SnippingTool.getRectangleWidth() + " pixels\r\n"
-                + " and a height of " + SnippingTool.getRectangleHeight() + " pixels";
+                + " and a height of " + SnippingTool.getRectangleHeight() + " pixels. Starting from: (" + SnippingTool.getDrawnRectangle().X
+                + "," + SnippingTool.getDrawnRectangle().Y + ")";
 
                 checkBoxDivideInto.Enabled = true;
 

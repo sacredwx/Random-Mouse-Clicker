@@ -86,9 +86,10 @@
             // 
             // buttonDrawArea
             // 
-            this.buttonDrawArea.Location = new System.Drawing.Point(105, 16);
+            this.buttonDrawArea.Location = new System.Drawing.Point(140, 20);
+            this.buttonDrawArea.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonDrawArea.Name = "buttonDrawArea";
-            this.buttonDrawArea.Size = new System.Drawing.Size(124, 23);
+            this.buttonDrawArea.Size = new System.Drawing.Size(165, 28);
             this.buttonDrawArea.TabIndex = 0;
             this.buttonDrawArea.Text = "Draw clicking area";
             this.toolTip1.SetToolTip(this.buttonDrawArea, "Draw the area to click within");
@@ -98,9 +99,10 @@
             // buttonStart
             // 
             this.buttonStart.Enabled = false;
-            this.buttonStart.Location = new System.Drawing.Point(130, 250);
+            this.buttonStart.Location = new System.Drawing.Point(173, 308);
+            this.buttonStart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonStart.Name = "buttonStart";
-            this.buttonStart.Size = new System.Drawing.Size(75, 23);
+            this.buttonStart.Size = new System.Drawing.Size(100, 28);
             this.buttonStart.TabIndex = 2;
             this.buttonStart.Text = "Start";
             this.toolTip1.SetToolTip(this.buttonStart, "Begin clicking");
@@ -118,14 +120,16 @@
             "minute(s)",
             "hour(s)",
             "day(s)"});
-            this.comboBoxClickEvery.Location = new System.Drawing.Point(87, 51);
+            this.comboBoxClickEvery.Location = new System.Drawing.Point(116, 63);
+            this.comboBoxClickEvery.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxClickEvery.Name = "comboBoxClickEvery";
-            this.comboBoxClickEvery.Size = new System.Drawing.Size(93, 21);
+            this.comboBoxClickEvery.Size = new System.Drawing.Size(123, 24);
             this.comboBoxClickEvery.TabIndex = 4;
             // 
             // numericClickEveryMin
             // 
-            this.numericClickEveryMin.Location = new System.Drawing.Point(15, 23);
+            this.numericClickEveryMin.Location = new System.Drawing.Point(20, 28);
+            this.numericClickEveryMin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericClickEveryMin.Maximum = new decimal(new int[] {
             -2147483648,
             0,
@@ -137,7 +141,7 @@
             0,
             0});
             this.numericClickEveryMin.Name = "numericClickEveryMin";
-            this.numericClickEveryMin.Size = new System.Drawing.Size(100, 20);
+            this.numericClickEveryMin.Size = new System.Drawing.Size(133, 22);
             this.numericClickEveryMin.TabIndex = 5;
             this.numericClickEveryMin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numericClickEveryMin.Value = new decimal(new int[] {
@@ -151,9 +155,10 @@
             this.radioEndManually.AutoSize = true;
             this.radioEndManually.Checked = true;
             this.radioEndManually.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioEndManually.Location = new System.Drawing.Point(43, 136);
+            this.radioEndManually.Location = new System.Drawing.Point(57, 167);
+            this.radioEndManually.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioEndManually.Name = "radioEndManually";
-            this.radioEndManually.Size = new System.Drawing.Size(128, 30);
+            this.radioEndManually.Size = new System.Drawing.Size(158, 38);
             this.radioEndManually.TabIndex = 8;
             this.radioEndManually.TabStop = true;
             this.radioEndManually.Text = "End manually\r\n(CTRL+WIN+ESC)";
@@ -165,9 +170,10 @@
             // 
             this.radioEndAutomatically.AutoSize = true;
             this.radioEndAutomatically.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioEndAutomatically.Location = new System.Drawing.Point(176, 143);
+            this.radioEndAutomatically.Location = new System.Drawing.Point(235, 176);
+            this.radioEndAutomatically.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioEndAutomatically.Name = "radioEndAutomatically";
-            this.radioEndAutomatically.Size = new System.Drawing.Size(125, 17);
+            this.radioEndAutomatically.Size = new System.Drawing.Size(157, 21);
             this.radioEndAutomatically.TabIndex = 9;
             this.radioEndAutomatically.Text = "End automatically";
             this.toolTip1.SetToolTip(this.radioEndAutomatically, "Stop the program when finished");
@@ -177,9 +183,11 @@
             // groupBoxDuration
             // 
             this.groupBoxDuration.Enabled = false;
-            this.groupBoxDuration.Location = new System.Drawing.Point(29, 184);
+            this.groupBoxDuration.Location = new System.Drawing.Point(39, 226);
+            this.groupBoxDuration.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBoxDuration.Name = "groupBoxDuration";
-            this.groupBoxDuration.Size = new System.Drawing.Size(273, 58);
+            this.groupBoxDuration.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxDuration.Size = new System.Drawing.Size(364, 71);
             this.groupBoxDuration.TabIndex = 10;
             this.groupBoxDuration.TabStop = false;
             this.groupBoxDuration.Text = "Duration";
@@ -191,9 +199,11 @@
             this.groupBoxMouseMovement.Controls.Add(this.radioFast);
             this.groupBoxMouseMovement.Controls.Add(this.radioNormal);
             this.groupBoxMouseMovement.Controls.Add(this.radioSlow);
-            this.groupBoxMouseMovement.Location = new System.Drawing.Point(13, 187);
+            this.groupBoxMouseMovement.Location = new System.Drawing.Point(17, 230);
+            this.groupBoxMouseMovement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBoxMouseMovement.Name = "groupBoxMouseMovement";
-            this.groupBoxMouseMovement.Size = new System.Drawing.Size(299, 78);
+            this.groupBoxMouseMovement.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxMouseMovement.Size = new System.Drawing.Size(399, 96);
             this.groupBoxMouseMovement.TabIndex = 3;
             this.groupBoxMouseMovement.TabStop = false;
             this.groupBoxMouseMovement.Text = "Mouse movement";
@@ -202,9 +212,10 @@
             // radioInstant
             // 
             this.radioInstant.AutoSize = true;
-            this.radioInstant.Location = new System.Drawing.Point(212, 36);
+            this.radioInstant.Location = new System.Drawing.Point(283, 44);
+            this.radioInstant.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioInstant.Name = "radioInstant";
-            this.radioInstant.Size = new System.Drawing.Size(57, 17);
+            this.radioInstant.Size = new System.Drawing.Size(71, 21);
             this.radioInstant.TabIndex = 3;
             this.radioInstant.Text = "Instant";
             this.radioInstant.UseVisualStyleBackColor = true;
@@ -212,9 +223,10 @@
             // radioFast
             // 
             this.radioFast.AutoSize = true;
-            this.radioFast.Location = new System.Drawing.Point(154, 36);
+            this.radioFast.Location = new System.Drawing.Point(205, 44);
+            this.radioFast.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioFast.Name = "radioFast";
-            this.radioFast.Size = new System.Drawing.Size(45, 17);
+            this.radioFast.Size = new System.Drawing.Size(56, 21);
             this.radioFast.TabIndex = 2;
             this.radioFast.Text = "Fast";
             this.radioFast.UseVisualStyleBackColor = true;
@@ -223,9 +235,10 @@
             // 
             this.radioNormal.AutoSize = true;
             this.radioNormal.Checked = true;
-            this.radioNormal.Location = new System.Drawing.Point(86, 36);
+            this.radioNormal.Location = new System.Drawing.Point(115, 44);
+            this.radioNormal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioNormal.Name = "radioNormal";
-            this.radioNormal.Size = new System.Drawing.Size(58, 17);
+            this.radioNormal.Size = new System.Drawing.Size(74, 21);
             this.radioNormal.TabIndex = 1;
             this.radioNormal.TabStop = true;
             this.radioNormal.Text = "Normal";
@@ -234,9 +247,10 @@
             // radioSlow
             // 
             this.radioSlow.AutoSize = true;
-            this.radioSlow.Location = new System.Drawing.Point(26, 36);
+            this.radioSlow.Location = new System.Drawing.Point(35, 44);
+            this.radioSlow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioSlow.Name = "radioSlow";
-            this.radioSlow.Size = new System.Drawing.Size(48, 17);
+            this.radioSlow.Size = new System.Drawing.Size(58, 21);
             this.radioSlow.TabIndex = 0;
             this.radioSlow.Text = "Slow";
             this.radioSlow.UseVisualStyleBackColor = true;
@@ -250,9 +264,11 @@
             this.groupBoxOptions.Controls.Add(this.numericClickEachArea);
             this.groupBoxOptions.Controls.Add(this.numericDivideIntoEqualAreas);
             this.groupBoxOptions.Controls.Add(this.checkBoxDivideInto);
-            this.groupBoxOptions.Location = new System.Drawing.Point(13, 45);
+            this.groupBoxOptions.Location = new System.Drawing.Point(17, 55);
+            this.groupBoxOptions.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBoxOptions.Name = "groupBoxOptions";
-            this.groupBoxOptions.Size = new System.Drawing.Size(299, 129);
+            this.groupBoxOptions.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxOptions.Size = new System.Drawing.Size(399, 159);
             this.groupBoxOptions.TabIndex = 2;
             this.groupBoxOptions.TabStop = false;
             this.groupBoxOptions.Text = "Options";
@@ -263,9 +279,10 @@
             this.labelOf.AutoSize = true;
             this.labelOf.Enabled = false;
             this.labelOf.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelOf.Location = new System.Drawing.Point(94, 62);
+            this.labelOf.Location = new System.Drawing.Point(125, 76);
+            this.labelOf.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelOf.Name = "labelOf";
-            this.labelOf.Size = new System.Drawing.Size(18, 13);
+            this.labelOf.Size = new System.Drawing.Size(22, 17);
             this.labelOf.TabIndex = 13;
             this.labelOf.Text = "of";
             this.toolTip1.SetToolTip(this.labelOf, "Set the time between clicks");
@@ -275,9 +292,10 @@
             this.comboBoxDividedAreas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxDividedAreas.Enabled = false;
             this.comboBoxDividedAreas.FormattingEnabled = true;
-            this.comboBoxDividedAreas.Location = new System.Drawing.Point(118, 59);
+            this.comboBoxDividedAreas.Location = new System.Drawing.Point(157, 73);
+            this.comboBoxDividedAreas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxDividedAreas.Name = "comboBoxDividedAreas";
-            this.comboBoxDividedAreas.Size = new System.Drawing.Size(87, 21);
+            this.comboBoxDividedAreas.Size = new System.Drawing.Size(115, 24);
             this.comboBoxDividedAreas.TabIndex = 12;
             // 
             // labelClickEachTimes
@@ -285,9 +303,10 @@
             this.labelClickEachTimes.AutoSize = true;
             this.labelClickEachTimes.Enabled = false;
             this.labelClickEachTimes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelClickEachTimes.Location = new System.Drawing.Point(209, 92);
+            this.labelClickEachTimes.Location = new System.Drawing.Point(279, 113);
+            this.labelClickEachTimes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelClickEachTimes.Name = "labelClickEachTimes";
-            this.labelClickEachTimes.Size = new System.Drawing.Size(44, 13);
+            this.labelClickEachTimes.Size = new System.Drawing.Size(58, 17);
             this.labelClickEachTimes.TabIndex = 11;
             this.labelClickEachTimes.Text = "time(s)";
             this.toolTip1.SetToolTip(this.labelClickEachTimes, "Set the time between clicks");
@@ -297,9 +316,10 @@
             this.labelClickEachArea.AutoSize = true;
             this.labelClickEachArea.Enabled = false;
             this.labelClickEachArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelClickEachArea.Location = new System.Drawing.Point(16, 92);
+            this.labelClickEachArea.Location = new System.Drawing.Point(21, 113);
+            this.labelClickEachArea.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelClickEachArea.Name = "labelClickEachArea";
-            this.labelClickEachArea.Size = new System.Drawing.Size(96, 13);
+            this.labelClickEachArea.Size = new System.Drawing.Size(120, 17);
             this.labelClickEachArea.TabIndex = 10;
             this.labelClickEachArea.Text = "Click each area";
             this.toolTip1.SetToolTip(this.labelClickEachArea, "Set the time between clicks");
@@ -307,7 +327,8 @@
             // numericClickEachArea
             // 
             this.numericClickEachArea.Enabled = false;
-            this.numericClickEachArea.Location = new System.Drawing.Point(118, 90);
+            this.numericClickEachArea.Location = new System.Drawing.Point(157, 111);
+            this.numericClickEachArea.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericClickEachArea.Maximum = new decimal(new int[] {
             -2147483648,
             0,
@@ -319,7 +340,7 @@
             0,
             0});
             this.numericClickEachArea.Name = "numericClickEachArea";
-            this.numericClickEachArea.Size = new System.Drawing.Size(87, 20);
+            this.numericClickEachArea.Size = new System.Drawing.Size(116, 22);
             this.numericClickEachArea.TabIndex = 9;
             this.numericClickEachArea.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numericClickEachArea.Value = new decimal(new int[] {
@@ -332,7 +353,8 @@
             // numericDivideIntoEqualAreas
             // 
             this.numericDivideIntoEqualAreas.Enabled = false;
-            this.numericDivideIntoEqualAreas.Location = new System.Drawing.Point(118, 30);
+            this.numericDivideIntoEqualAreas.Location = new System.Drawing.Point(157, 37);
+            this.numericDivideIntoEqualAreas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericDivideIntoEqualAreas.Maximum = new decimal(new int[] {
             -2147483648,
             0,
@@ -344,7 +366,7 @@
             0,
             0});
             this.numericDivideIntoEqualAreas.Name = "numericDivideIntoEqualAreas";
-            this.numericDivideIntoEqualAreas.Size = new System.Drawing.Size(87, 20);
+            this.numericDivideIntoEqualAreas.Size = new System.Drawing.Size(116, 22);
             this.numericDivideIntoEqualAreas.TabIndex = 6;
             this.numericDivideIntoEqualAreas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numericDivideIntoEqualAreas.Value = new decimal(new int[] {
@@ -359,9 +381,10 @@
             this.checkBoxDivideInto.AutoSize = true;
             this.checkBoxDivideInto.Enabled = false;
             this.checkBoxDivideInto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxDivideInto.Location = new System.Drawing.Point(26, 30);
+            this.checkBoxDivideInto.Location = new System.Drawing.Point(35, 37);
+            this.checkBoxDivideInto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxDivideInto.Name = "checkBoxDivideInto";
-            this.checkBoxDivideInto.Size = new System.Drawing.Size(261, 17);
+            this.checkBoxDivideInto.Size = new System.Drawing.Size(328, 21);
             this.checkBoxDivideInto.TabIndex = 1;
             this.checkBoxDivideInto.Text = "Divide into                           equal areas";
             this.checkBoxDivideInto.UseVisualStyleBackColor = true;
@@ -371,9 +394,10 @@
             // 
             this.labelTo.AutoSize = true;
             this.labelTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTo.Location = new System.Drawing.Point(124, 25);
+            this.labelTo.Location = new System.Drawing.Point(165, 31);
+            this.labelTo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTo.Name = "labelTo";
-            this.labelTo.Size = new System.Drawing.Size(18, 13);
+            this.labelTo.Size = new System.Drawing.Size(22, 17);
             this.labelTo.TabIndex = 17;
             this.labelTo.Text = "to";
             this.toolTip1.SetToolTip(this.labelTo, "Set the time between clicks");
@@ -384,9 +408,11 @@
             this.groupBoxClickEvery.Controls.Add(this.numericClickEveryMin);
             this.groupBoxClickEvery.Controls.Add(this.numericClickEveryMax);
             this.groupBoxClickEvery.Controls.Add(this.comboBoxClickEvery);
-            this.groupBoxClickEvery.Location = new System.Drawing.Point(29, 43);
+            this.groupBoxClickEvery.Location = new System.Drawing.Point(39, 53);
+            this.groupBoxClickEvery.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBoxClickEvery.Name = "groupBoxClickEvery";
-            this.groupBoxClickEvery.Size = new System.Drawing.Size(273, 86);
+            this.groupBoxClickEvery.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxClickEvery.Size = new System.Drawing.Size(364, 106);
             this.groupBoxClickEvery.TabIndex = 18;
             this.groupBoxClickEvery.TabStop = false;
             this.groupBoxClickEvery.Text = "Click every";
@@ -394,7 +420,8 @@
             // 
             // numericClickEveryMax
             // 
-            this.numericClickEveryMax.Location = new System.Drawing.Point(156, 23);
+            this.numericClickEveryMax.Location = new System.Drawing.Point(208, 28);
+            this.numericClickEveryMax.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericClickEveryMax.Maximum = new decimal(new int[] {
             -2147483648,
             0,
@@ -406,7 +433,7 @@
             0,
             0});
             this.numericClickEveryMax.Name = "numericClickEveryMax";
-            this.numericClickEveryMax.Size = new System.Drawing.Size(100, 20);
+            this.numericClickEveryMax.Size = new System.Drawing.Size(133, 22);
             this.numericClickEveryMax.TabIndex = 16;
             this.numericClickEveryMax.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numericClickEveryMax.Value = new decimal(new int[] {
@@ -418,9 +445,10 @@
             // linkLabelCustomize
             // 
             this.linkLabelCustomize.AutoSize = true;
-            this.linkLabelCustomize.Location = new System.Drawing.Point(222, 270);
+            this.linkLabelCustomize.Location = new System.Drawing.Point(296, 332);
+            this.linkLabelCustomize.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabelCustomize.Name = "linkLabelCustomize";
-            this.linkLabelCustomize.Size = new System.Drawing.Size(94, 13);
+            this.linkLabelCustomize.Size = new System.Drawing.Size(126, 17);
             this.linkLabelCustomize.TabIndex = 4;
             this.linkLabelCustomize.TabStop = true;
             this.linkLabelCustomize.Text = "Customize settings";
@@ -430,7 +458,8 @@
             // numericDuration
             // 
             this.numericDuration.Enabled = false;
-            this.numericDuration.Location = new System.Drawing.Point(62, 206);
+            this.numericDuration.Location = new System.Drawing.Point(83, 254);
+            this.numericDuration.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericDuration.Maximum = new decimal(new int[] {
             -2147483648,
             0,
@@ -442,7 +471,7 @@
             0,
             0});
             this.numericDuration.Name = "numericDuration";
-            this.numericDuration.Size = new System.Drawing.Size(100, 20);
+            this.numericDuration.Size = new System.Drawing.Size(133, 22);
             this.numericDuration.TabIndex = 12;
             this.numericDuration.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numericDuration.Value = new decimal(new int[] {
@@ -464,9 +493,10 @@
             "minute(s)",
             "hour(s)",
             "day(s)"});
-            this.comboBoxDuration.Location = new System.Drawing.Point(177, 205);
+            this.comboBoxDuration.Location = new System.Drawing.Point(236, 252);
+            this.comboBoxDuration.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxDuration.Name = "comboBoxDuration";
-            this.comboBoxDuration.Size = new System.Drawing.Size(93, 21);
+            this.comboBoxDuration.Size = new System.Drawing.Size(123, 24);
             this.comboBoxDuration.TabIndex = 11;
             // 
             // tabControl1
@@ -476,9 +506,10 @@
             this.tabControl1.Controls.Add(this.tabPreview);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(334, 312);
+            this.tabControl1.Size = new System.Drawing.Size(445, 384);
             this.tabControl1.TabIndex = 14;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
@@ -493,10 +524,11 @@
             this.tabBasic.Controls.Add(this.groupBoxDuration);
             this.tabBasic.Controls.Add(this.radioEndAutomatically);
             this.tabBasic.Controls.Add(this.radioEndManually);
-            this.tabBasic.Location = new System.Drawing.Point(4, 22);
+            this.tabBasic.Location = new System.Drawing.Point(4, 25);
+            this.tabBasic.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabBasic.Name = "tabBasic";
-            this.tabBasic.Padding = new System.Windows.Forms.Padding(3);
-            this.tabBasic.Size = new System.Drawing.Size(326, 286);
+            this.tabBasic.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabBasic.Size = new System.Drawing.Size(437, 355);
             this.tabBasic.TabIndex = 0;
             this.tabBasic.Text = "Basic";
             this.tabBasic.UseVisualStyleBackColor = true;
@@ -505,9 +537,10 @@
             // 
             this.labelCannotBeChanged.AutoSize = true;
             this.labelCannotBeChanged.ForeColor = System.Drawing.Color.Red;
-            this.labelCannotBeChanged.Location = new System.Drawing.Point(18, 167);
+            this.labelCannotBeChanged.Location = new System.Drawing.Point(24, 206);
+            this.labelCannotBeChanged.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCannotBeChanged.Name = "labelCannotBeChanged";
-            this.labelCannotBeChanged.Size = new System.Drawing.Size(292, 13);
+            this.labelCannotBeChanged.Size = new System.Drawing.Size(389, 17);
             this.labelCannotBeChanged.TabIndex = 14;
             this.labelCannotBeChanged.Text = "Cannot be changed due to choosing to divide into sub-areas";
             this.labelCannotBeChanged.Visible = false;
@@ -518,10 +551,11 @@
             this.tabAdvanced.Controls.Add(this.groupBoxMouseMovement);
             this.tabAdvanced.Controls.Add(this.groupBoxOptions);
             this.tabAdvanced.Controls.Add(this.labelWidthHeight);
-            this.tabAdvanced.Location = new System.Drawing.Point(4, 22);
+            this.tabAdvanced.Location = new System.Drawing.Point(4, 25);
+            this.tabAdvanced.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabAdvanced.Name = "tabAdvanced";
-            this.tabAdvanced.Padding = new System.Windows.Forms.Padding(3);
-            this.tabAdvanced.Size = new System.Drawing.Size(326, 286);
+            this.tabAdvanced.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabAdvanced.Size = new System.Drawing.Size(437, 355);
             this.tabAdvanced.TabIndex = 1;
             this.tabAdvanced.Text = "Advanced";
             this.tabAdvanced.UseVisualStyleBackColor = true;
@@ -530,19 +564,22 @@
             // 
             this.labelWidthHeight.AutoSize = true;
             this.labelWidthHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelWidthHeight.Location = new System.Drawing.Point(69, 12);
+            this.labelWidthHeight.Location = new System.Drawing.Point(14, 15);
+            this.labelWidthHeight.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelWidthHeight.Name = "labelWidthHeight";
-            this.labelWidthHeight.Size = new System.Drawing.Size(189, 30);
+            this.labelWidthHeight.Size = new System.Drawing.Size(224, 36);
             this.labelWidthHeight.TabIndex = 0;
             this.labelWidthHeight.Text = "Draw an area in the first tab to \r\nview width and height information";
+            this.labelWidthHeight.Click += new System.EventHandler(this.labelWidthHeight_Click);
             // 
             // tabPreview
             // 
             this.tabPreview.Controls.Add(this.labelPreviewInstructions);
             this.tabPreview.Controls.Add(this.previewPictureBox);
-            this.tabPreview.Location = new System.Drawing.Point(4, 22);
+            this.tabPreview.Location = new System.Drawing.Point(4, 25);
+            this.tabPreview.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPreview.Name = "tabPreview";
-            this.tabPreview.Size = new System.Drawing.Size(326, 286);
+            this.tabPreview.Size = new System.Drawing.Size(437, 355);
             this.tabPreview.TabIndex = 2;
             this.tabPreview.Text = "Preview";
             this.tabPreview.UseVisualStyleBackColor = true;
@@ -551,9 +588,10 @@
             // 
             this.labelPreviewInstructions.AutoSize = true;
             this.labelPreviewInstructions.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPreviewInstructions.Location = new System.Drawing.Point(64, 118);
+            this.labelPreviewInstructions.Location = new System.Drawing.Point(85, 145);
+            this.labelPreviewInstructions.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPreviewInstructions.Name = "labelPreviewInstructions";
-            this.labelPreviewInstructions.Size = new System.Drawing.Size(207, 30);
+            this.labelPreviewInstructions.Size = new System.Drawing.Size(249, 36);
             this.labelPreviewInstructions.TabIndex = 1;
             this.labelPreviewInstructions.Text = "Draw an area in the first tab to \r\nview a preview of what will be clicked";
             // 
@@ -561,8 +599,9 @@
             // 
             this.previewPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.previewPictureBox.Location = new System.Drawing.Point(0, 0);
+            this.previewPictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.previewPictureBox.Name = "previewPictureBox";
-            this.previewPictureBox.Size = new System.Drawing.Size(326, 286);
+            this.previewPictureBox.Size = new System.Drawing.Size(437, 355);
             this.previewPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.previewPictureBox.TabIndex = 0;
             this.previewPictureBox.TabStop = false;
@@ -578,27 +617,29 @@
             // 
             // notifyMenu
             // 
+            this.notifyMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.notifyMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuExit});
             this.notifyMenu.Name = "notifyMenu";
-            this.notifyMenu.Size = new System.Drawing.Size(93, 26);
+            this.notifyMenu.Size = new System.Drawing.Size(103, 28);
             // 
             // menuExit
             // 
             this.menuExit.Name = "menuExit";
-            this.menuExit.Size = new System.Drawing.Size(92, 22);
+            this.menuExit.Size = new System.Drawing.Size(102, 24);
             this.menuExit.Text = "Exit";
             this.menuExit.Click += new System.EventHandler(this.menuExit_Click_1);
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(334, 312);
+            this.ClientSize = new System.Drawing.Size(445, 384);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.Text = "Random Mouse Clicker";
