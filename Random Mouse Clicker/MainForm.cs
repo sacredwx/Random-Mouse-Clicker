@@ -52,7 +52,7 @@ namespace Random_Mouse_Clicker
 
         private void checkAutorun(string[] args)
         {
-            if(args.Length == 5 && Convert.ToString(args[0])=="autorun")
+            if(args.Length == 7 && Convert.ToString(args[0])=="autorun")
             {
                 multimonitor = false;
 
@@ -61,7 +61,7 @@ namespace Random_Mouse_Clicker
                 x2=int.Parse(args[3]);
                 y2=int.Parse(args[4]);
 
-                checkClickInterval(comboBoxClickEvery, numericClickEveryMin.Value, numericClickEveryMax.Value);
+                checkClickInterval(comboBoxClickEvery, decimal.Parse(args[5]), decimal.Parse(args[6]));
                 moveAtMouseSpeed = checkMouseSpeed();
                 runManualOrAutomatic();
             }
